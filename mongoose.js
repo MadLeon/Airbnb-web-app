@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 const bcrypt = require('bcryptjs');
 
-mongoose.connect("mongodb+srv://Leon:qdll8765@senecaweb.wpxtu.mongodb.net/web322_assignment?retryWrites=true&w=majority", {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect("mongodb+srv://Leon:password@senecaweb.wpxtu.mongodb.net/web322_assignment?retryWrites=true&w=majority", {useNewUrlParser: true, useUnifiedTopology: true});
 
 var userSchema = new Schema({
   "email": {"type": String, "unique" : true},
